@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="order.css" />
+    <link rel="shortcut icon" href="Images/starbucks.png" type="image/x-icon" />
+    <link rel="stylesheet" href="order.css">
+    <title>Order | Starbucks</title>
+  </head>
+  <body>
+    <nav>
+      <div><a href="index.html"><img id="navLogo" src="Images/starbucks.png" alt="" /></a></div>
+      <div class="ach">
+        <ul class="anchors">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gift.html">Gift</a></li>
+          <li><a id="currentPage" href="order.html">Order</a></li>
+          <li><a href="pay.html">Pay</a></li>
+        </ul>
+      </div>
+      <div class="navInput">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Looking for something specific?" />
+      </div>
+      <div class="ic"><i class="fa-regular fa-user"></i></div>
+    </nav>
+    <div class="selection">
+      <div id="inputSelection">
+        <i style="filter: invert(1)" class="fa-solid fa-location-dot"></i>
+        <input id="isF" type="text" placeholder="No Store Selected" />
+        <i style="filter: invert(1)" class="fa-solid fa-clock"></i>
+        <span style="color: white">00 min</span>
+      </div>
+      <div id="toggleSelection">
+        <div id="toggleSelectionA">Dine-In</div>
+        <div id="toggleSelectionB">Takeaway</div>
+      </div>
+    </div>
+    <div class="coffeeOptions">
+      <div class="list">
+        <ul class="listItems">
+          <li><a href="#">BestSeller</a></li>
+          <li>|</li>
+          <li><a href="#">Drinks</a></li>
+          <li>|</li>
+          <li><a href="#">Food</a></li>
+          <li>|</li>
+          <li><a href="#">Merchandise</a></li>
+          <li>|</li>
+          <li><a href="#">Coffee At Home</a></li>
+          <li>|</li>
+          <li><a href="#">Ready To Eat</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="mainText">
+        <span style="font-weight: bolder; font-size: large">Bestseller</span>
+        <br />
+        <small style="font-weight: lighter; color: rgb(91, 78, 78)">
+          Everyone's favorite Starbucks put together in a specially curated
+          collection.
+        </small>
+      </div>
+      <div class="cards">
+        <div id="card1">
+          <div class="cardContent">
+            <div>
+              <img id="cardImg" src="https://starbucksstatic.cognizantorderserv.com/Items/Small/100501.jpg" alt="" />
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-leaf"></i>
+              <br />
+              <small
+                style="
+                  font-size: large;
+                  font-stretch: normal;
+                  font-weight: bold;
+                "
+                class="cardText"
+                >Java Chip Frappuccino</small
+              >
+              <br />
+              <small  class="cardText"
+                >TALL(354 ML) .392 kcal</small
+              >
+              <br />
+              <small class="cardText"
+                >Mocha sauce and Frappuccino® chips blended with Frappu...</small
+              >
+            </div>
+          </div>
+          <span id="cardPrice">₹388.50</span>
+          <button id="cardBtn">Add Item</button>
+        </div>
+        <div id="card1">
+          <div class="cardContent">
+            <div>
+              <img id="cardImg" src="https://starbucksstatic.cognizantorderserv.com/Items/Small/100433.jpg" alt="" />
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-leaf"></i>
+              <br />
+              <small
+                style="
+                  font-size: large;
+                  font-stretch: normal;
+                  font-weight: bold;
+                "
+                class="cardText"
+                >Caffe Americano</small
+              >
+              <br />
+              <small  class="cardText"
+                >SHORT(237 Ml) .0 kcal</small
+              >
+              <br />
+              <small class="cardText"
+                >Rich in flavour, full-bodied espresso with hot water in
+                true...</small
+              >
+            </div>
+          </div>
+          <span id="cardPrice">₹278.25</span>
+          <button id="cardBtn">Add Item</button>
+        </div>
+        <div id="card1">
+          <div class="cardContent">
+            <div>
+              <img id="cardImg" src="https://starbucksstatic.cognizantorderserv.com/Items/Small/105468.jpg" alt="" />
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-leaf"></i>
+              <br />
+              <small
+                style="
+                  font-size: large;
+                  font-stretch: normal;
+                  font-weight: bold;
+                "
+                class="cardText"
+                >Cold coffee</small
+              >
+              <br />
+              <small  class="cardText"
+                >TALL(354 ML) .354 kcal</small
+              >
+              <br />
+              <small class="cardText"
+                >Our signature rich in flavour espresso blended with
+                delicate...</small
+              >
+            </div>
+          </div>
+          <span id="cardPrice">₹372.75</span>
+          <button id="cardBtn">Add Item</button>
+        </div>
+        <div id="card1">
+          <div class="cardContent">
+            <div>
+              <img id="cardImg" src="https://starbucksstatic.cognizantorderserv.com/Items/Small/108177.jpg" alt="" />
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-leaf"></i>
+              <br />
+              <small
+                style="
+                  font-size: large;
+                  font-stretch: normal;
+                  font-weight: bold;
+                "
+                class="cardText"
+                >Creamy Spinach</small
+              >
+              <br />
+              <small  class="cardText"
+                >PER SERVE (160 g) - 358 Kcal</small
+              >
+              <br />
+              <small class="cardText"
+                >"A creamy spinach and corn filling encased in a buttery
+                Fren...</small
+              >
+            </div>
+          </div>
+          <span id="cardPrice">₹252.00</span>
+          <button id="cardBtn">Add Item</button>
+        </div>
+        <div id="card1">
+          <div class="cardContent">
+            <div>
+              <img id="cardImg" src="https://starbucksstatic.cognizantorderserv.com/Items/Small/103515.jpg" alt="" />
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-leaf"></i>
+              <br />
+              <small
+                style="
+                  font-size: large;
+                  font-stretch: normal;
+                  font-weight: bold;
+                "
+                class="cardText"
+                >Double Chocolate Chip</small
+              >
+              <br />
+              <small class="cardText"
+                >TALL(354 ML) .415 kcal</small
+              >
+              <br />
+              <small class="cardText"
+                >Rich mocha-flavored sauce meets up with chocolaty chips,
+                mil...</small
+              >
+            </div>
+          </div>
+          <span id="cardPrice">₹420.00</span>
+          <button id="cardBtn">Add Item</button>
+        </div>
+        <div id="card1">
+          <div class="cardContent">
+            <div>
+              <img id="cardImg" src="https://starbucksstatic.cognizantorderserv.com/Items/Small/100419.jpg" alt="" />
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-leaf"></i>
+              <br />
+              <small
+                style="
+                  font-size: large;
+                  font-stretch: normal;
+                  font-weight: bold;
+                "
+                class="cardText"
+                >Cappuccino</small
+              >
+              <br />
+              <small  class="cardText"
+                >SHORT(237 ML) .104 Kcal</small
+              >
+              <br />
+              <small class="cardText"
+                >Dark, Rich in flavour espresso lies in wait under a
+                smoothed...</small
+              >
+            </div>
+          </div>
+          <span id="cardPrice">₹299.25</span>
+          <button id="cardBtn">Add Item</button>
+        </div>
+        <div id="card1">
+          <div class="cardContent">
+            <div>
+              <img id="cardImg" src="https://starbucksstatic.cognizantorderserv.com/Items/Small/107707.jpg" alt="" />
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-leaf"></i>
+              <br />
+              <small
+                style="
+                  font-size: large;
+                  font-stretch: normal;
+                  font-weight: bold;
+                "
+                class="cardText"
+                >Double Chocolate Chip</small
+              >
+              <br />
+              <small class="cardText"
+                >PER SERVE (80 g) - 385.3 Kcal</small
+              >
+              <br />
+              <small class="cardText"
+                >A soft & chewy chocolate cookie topped with chocolate chips
+                ...</small
+              >
+            </div>
+          </div>
+          <span id="cardPrice">₹294.00</span>
+          <button id="cardBtn">Add Item</button>
+        </div>
+      </div>
+      
+    </main>
+    <script
+      src="https://kit.fontawesome.com/d34d1476f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let a = document.querySelectorAll(".listItems li a");
+      function removeActive() {
+        for (const element of a) {
+          element.classList.remove("active");
+        }
+      }
+      for (let element of a) {
+        element.addEventListener("click", () => {
+          console.log(element);
+          removeActive();
+          element.classList.add("active");
+        });
+      }
+    </script>
+  </body>
+</html>

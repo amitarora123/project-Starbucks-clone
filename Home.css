@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'SoDoSans-Regular';
+    src: url('fonts/SoDoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SoDoSans-Boldest';
+    src: url('fonts/SoDoSans-Bold.ttf') format('truetype');
+}
+
+* {
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greenbar {
+    background-color: #1e3932;
+    width: 100vw;
+    height: 12vh;
+}
+
+.choco {
+    width: 80vw;
+    height: 8vh;
+    justify-content: space-between;
+}
+
+.homeBtn {
+    width: 96px;
+    height: 32px;
+    padding: 0;
+    font-size: 12px;
+    border: 1px solid white;
+    background-color: #1e3932;
+}
+
+.choco p {
+
+    font-style: normal;
+    font-weight: 300;
+    Color: rgb(249, 249, 249);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.box1 {
+    position: relative;
+    width: 80vw;
+    height: 30vh;
+    background-color: #09907f;
+    margin: 5vh auto;
+    border: 1px solid white;
+    box-shadow: 0 2px 4px #09907f, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+    border-radius: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 30%;
+    border-top: none;
+    border-bottom: none;
+}
+
+.box1Innettxt {
+    margin-top: 20px;
+    width: 60vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5%;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.box1Innettxt p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: 'SoDoSans-Regular', Helvetica, sans-serif !important;
+
+}
+
+.box1Innettxt h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.newbtn {
+    position: absolute;
+    background-color: white;
+    color: black;
+    bottom: 22px;
+}
+
+#mid {
+    font-family: 'SoDoSans-Boldest', Helvetica, sans-serif !important;
+    color: black;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.fancy {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 20vh;
+    justify-content: space-evenly;
+}
+
+.items {
+    width: 110px;
+    height: 110px;
+    /* border: 2px solid black; */
+    border-radius: 150px;
+    border: none;
+    overflow: hidden;
+}
+
+.upperBox {
+    width: 120px;
+    height: 140px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.upperBox p {
+    color: black;
+    font-family: 'SoDoSans-Bold', Helvetica, sans-serif !important;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.items img {
+    width: 110px;
+    height: 110px;
+    /* border: 2px solid black; */
+    border-radius: 150px;
+    object-fit: cover;
+    box-sizing: border-box;
+
+
+}
+
+/* .items:hover {
+        border: 2px solid #1e3932;
+    } */
+.items img:hover {
+
+    border: 2px solid #00804c;
+
+
+}
+#short{
+    color: black;
+}
+.adBox {
+    width: 80vw;
+    height: 50vh;
+    margin: 5vh auto;
+    background-image: url(https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.adBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Initial transparent overlay */
+    transition: background-color 0.5s ease-in-out;
+    /* Smooth transition */
+    z-index: 1;
+}
+
+.adBox:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Darker overlay on hover */
+}
+
+.homeCards {
+    height: 43vh;
+    width: 100vw;
+    background-color: rgba(237, 235, 233, 1);
+    position: relative;
+    color: black;
+}
+
+.homeCardPrev {
+    position: absolute;
+    background-color: #a2a2a2;
+    height: 5vh;
+    width: 2.5vw;
+    top: 52%;
+    left: 7%;
+    opacity: 0.3;
+    z-index: 2;
+    border-radius: 50%;
+    color: black;
+}
+
+#prevIcon {
+    filter: invert(1);
+    position: absolute;
+    color: white;
+    width: 2vw;
+    height: 4vh;
+    top: 31%;
+    left: 31%;
+    color: black;
+}
+
+.homeCardNext {
+    position: absolute;
+    top: 50%;
+    right: 7.5%;
+    background-color: #a2a2a2;
+    height: 5vh;
+    width: 2.5vw;
+    opacity: 0.3;
+    z-index: 2;
+    border-radius: 50%;
+    color: black;
+}
+
+#nextIcon {
+    filter: invert(1);
+    position: absolute;
+    color: white;
+    width: 2vw;
+    height: 4vh;
+    top: 31%;
+    left: 31%;
+    color: black;
+}
+
+#homeRecommend {
+    color: #1e3932;
+    font-size: x-large;
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: black;
+}
+
+#homeCardsMenu {
+    position: absolute;
+    color: #00754a;
+    font-size: small;
+    top: 10%;
+    right: 8%;
+    font-weight: bold;
+    color: black;
+}
+
+#homeCardsMenu:hover {
+    cursor: pointer;
+}
+
+.homeCardContainer {
+    height: 22vh;
+    width: 82.5vw;
+    position: absolute;
+    top: 28%;
+    left: 8.5%;
+    display: flex;
+    gap: 2vw;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    color: black;
+}
+
+.homeCard1,
+.homeCard2,
+.homeCard3,
+.homeCard4,
+.homeCard5,
+.homeCard6,
+.homeCard7 {
+    position: relative;
+    height: full;
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #dedada;
+    color: #000;
+    }
+
+#homeCardImg {
+    position: absolute;
+    height: 10.5vh;
+    width: 5vw;
+    border-radius: 10px;
+    top: 7%;
+    left: 5.5%;
+    color: #000;
+}
+
+#thisI {
+    position: absolute;
+    top: 8%;
+    left: 28%;
+    color: #000;
+}
+
+#homeCardText {
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    font-size: small;
+    font-weight: 700;
+    color: #000;
+}
+
+#homeCardBtn {
+    position: absolute;
+    border: none;
+    padding: 8px;
+    background-color: #00754a;
+    border-radius: 18px;
+    color: white;
+    width: 6.5vw;
+    bottom: 8%;
+    right: 5%;
+}
+
+#homeCardBtn:hover {
+    background-color: #0e382c;
+    cursor: pointer;
+}
+
+#homeCardPrice {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.extraWhiteDiv {
+    width: 100vw;
+    height: 7vh;
+    color: #000;
+}
+
+.lastImage {
+    width: 100vw;
+    height: 68vh;
+    background-color: #dcdbdb;
+    position: relative;
+    color: #000;
+    overflow: hidden;
+}
+
+
+.lastImage span,  
+.lastImage button {
+    position: relative;
+    z-index: 2; /* Ensure these elements are above the overlay */
+}
+
+#lastText1 {
+    position: absolute;
+    color: #0e382c;
+    font-size: x-large;
+    font-weight: bold;
+    top: 7%;
+    left: 7.5%;
+    color: #000;
+}
+
+#lastText2 {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    font-size: small;
+    color: #00754a;
+}
+
+#lastText2:hover {
+    cursor: pointer;
+}
+
+#lastText3 {
+    position: absolute;
+    top: 55%;
+    left: 12%;
+    color: white;
+    font-size: x-large;
+}
+
+#lastText4 {
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    color: white;
+}
+
+#cc {
+    position: absolute;
+    top: 22%;
+    left: 11%;
+    color: #00754a;
+    z-index: 4;
+    background-color: white;
+    font-size: x-small;
+    border-radius: 5px;
+    padding: 2px;
+    color: #000;
+    z-index: 2;
+}
+
+#lastImg {
+    position: absolute;
+    top: 18%;
+    left: 8.5%;
+    height: 51vh;
+    width: 82.5vw;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+#lastImg:hover {
+    filter: brightness(50%); /* Darkens the image */
+}
+
+
+#lastBtn {
+    position: absolute;
+    bottom: 12%;
+    left: 13%;
+    border: none;
+    background-color: white;
+    width: 13vw;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000;
+}
